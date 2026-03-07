@@ -1,0 +1,38 @@
+// Home page styles
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  
+  &-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  &-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+}
+
+.features {
+  padding: 3rem 0;
+  
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  &-item {
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+.cta {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: #f8f9fa;
+}

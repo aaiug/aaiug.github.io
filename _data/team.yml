@@ -1,0 +1,16 @@
+- name: Jane Doe
+  role: Lead Developer
+  bio: Passionate about clean code and user experience.
+  avatar: /assets/images/team/jane.jpg
+  social:
+    twitter: janedoe
+    github: janedoe
+    linkedin: janedoe
+
+- name: John Smith
+  role: Designer
+  bio: Creating beautiful interfaces since 2015.
+  avatar: /assets/images/team/john.jpg
+  social:
+    twitter: johnsmith
+    dribbble: johnsmith
