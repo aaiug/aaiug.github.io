@@ -137,4 +137,22 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 500);
     });
   }
+  
+  // Mobile Menu Toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+  
+  // Mobile Join Button
+  const joinBtnMobile = document.getElementById('joinBtnMobile');
+  if (joinBtnMobile) {
+    joinBtnMobile.addEventListener('click', () => {
+      joinModal.open();
+      mobileMenu.classList.add('hidden');
+    });
+  }
 });
