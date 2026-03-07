@@ -47,6 +47,10 @@
         border-color: rgba(59, 130, 246, 0.3);
         box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
       }
+      .modal-overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(4px);
+      }
     </style>
     
     {% feed_meta %}
@@ -60,5 +64,59 @@
     </main>
     
     {% include footer.html %}
+    
+    <!-- Join Modal -->
+    <div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center modal-overlay">
+      <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 max-w-[40rem] w-full mx-4 relative">
+        <button
+          id="closeModal"
+          class="absolute top-4 right-4 text-gray-400 hover:text-white transition"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <h2 class="text-2xl font-bold mb-3">Join Agentic AI User Group</h2>
+        <p class="text-gray-400 mb-6">
+          Get the latest articles, tutorials, and updates delivered to your inbox.
+        </p>
+        <div class="flex justify-center">
+          <script
+            async
+            data-uid="e394d33f99"
+            src="https://aaiug.kit.com/e394d33f99/index.js"
+          ></script>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center modal-overlay">
+      <div class="bg-gray-900 border border-gray-700 rounded-2xl p-8 max-w-md w-full mx-4 relative text-center">
+        <button
+          id="closeSuccessModal"
+          class="absolute top-4 right-4 text-gray-400 hover:text-white transition"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        
+        <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+        </div>
+        
+        <h2 class="text-2xl font-bold mb-2 text-white">You're In!</h2>
+        <p class="text-gray-400 mb-6">Thanks for joining. Check your inbox for a confirmation email.</p>
+        
+        <button id="successCloseBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition">
+          Got it
+        </button>
+      </div>
+    </div>
+    
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
   </body>
 </html>
