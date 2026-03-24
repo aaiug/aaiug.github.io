@@ -61,7 +61,7 @@ description: Insights, tutorials, and articles on Agentic AI and autonomous agen
       Share your knowledge with the Agentic AI community. We're always looking for guest authors.
     </p>
     <a
-      href="mailto:hello@aaiug.org"
+      href="mailto:write4us@aaiug.org"
       class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-semibold transition"
     >
       Write for Us
