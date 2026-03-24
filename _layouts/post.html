@@ -113,6 +113,41 @@
         border-radius: 0.5rem;
         margin: 2rem 0;
       }
+      .prose video {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 0.5rem;
+        margin: 2rem 0;
+        display: block;
+        background-color: #000;
+        min-height: 200px;
+      }
+      .prose video::-webkit-media-controls {
+        border-radius: 0.5rem;
+      }
+      .prose video[loading] {
+        opacity: 0.7;
+      }
+      .prose .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        margin: 2rem 0;
+        background-color: #000;
+      }
+      .prose .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      .prose video::-webkit-media-controls {
+        border-radius: 0.5rem;
+      }
     </style>
     
     {% feed_meta %}
@@ -122,7 +157,7 @@
     {% include header.html %}
     
     <main class="site-content">
-      <div class="max-w-5xl mx-auto px-6 py-12 pt-24">
+      <div class="max-w-5xl mx-auto px-6 py-12 pt-32">
         <!-- Main Article Content -->
         <article>
           <!-- Back Link -->
