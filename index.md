@@ -32,7 +32,7 @@ description: Insights, tutorials, and articles on Agentic AI and autonomous agen
       <div class="flex items-center gap-2 mb-3">
         <span class="text-xs text-gray-500">{{ post.category | default: "Article" }}</span>
         <span class="text-xs text-gray-600">•</span>
-        <span class="text-xs text-gray-500">{{ post.read_time | default: 5 }} min read</span>
+        <span class="text-xs text-gray-500">{{ post.readingTime | default: 5 }} min read</span>
       </div>
       <h3 class="text-xl font-bold mb-2 text-white">{{ post.title }}</h3>
       <p class="text-gray-400 text-sm mb-4 leading-relaxed">

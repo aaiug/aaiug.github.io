@@ -5,7 +5,7 @@ description: "Join the premier community for AI builders moving beyond prompts t
 category: Community
 tags: ["agentic-ai", "ai-community", "autonomous-agents", "ai-development", "welcome"]
 date: "2026-03-20"
-readingTime: "6 min read"
+readingTime: 6
 author: "Kalai Subramaniyan"
 ---
 
